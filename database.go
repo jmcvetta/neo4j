@@ -5,11 +5,24 @@
 package neo4j
 
 import (
+	"fmt"
 	"github.com/jmcvetta/restclient"
 	"log"
 	"net/url"
 	"strconv"
 )
+
+func init() {
+	fmt.Println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+	fmt.Println()
+	fmt.Println("IMPORTANT NOTE:")
+	fmt.Println()
+	fmt.Println("Package github.com/jmcvetta/neo4j has been renamed github.com/jmcvetta/neoism.")
+	fmt.Println("All future development, bugfixes, etc. will occur in the new repository.")
+	fmt.Println("Please update your software.  Package neo4j is deprecated.")
+	fmt.Println()
+	fmt.Println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+}
 
 // A Database is a REST client connected to a Neo4j database.
 type Database struct {
